@@ -13,7 +13,7 @@ def test_write_sitemap_urlset_full():
     )
     url2 = sitemap.URL('http://example.com/')
     file = io.StringIO()
-    sitemap.write_sitemap_urlset(file, [url1, url2])
+    sitemap.write_urlset(file, [url1, url2])
     assert file.getvalue() == """\
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\

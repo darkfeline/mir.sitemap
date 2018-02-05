@@ -19,9 +19,10 @@ http://www.sitemaps.org/protocol.html
 
 import io
 from typing import NamedTuple
+import warnings
 import xml.etree.ElementTree as ET
 
-__version__ = '1.0.0'
+__version__ = '1.1.0'
 
 
 class URL(NamedTuple):
@@ -43,7 +44,7 @@ class URL(NamedTuple):
         return entry
 
 
-def write_sitemap_urlset(file: io.TextIOBase, urls):
+def write_urlset(file: io.TextIOBase, urls):
     """Write sitemap urlset to a file.
 
     urls is an iterable of URL instances.  file is a text file for writing.
@@ -58,3 +59,8 @@ def write_sitemap_urlset(file: io.TextIOBase, urls):
     urlset.extend(url.to_etree() for url in urls)
     document = ET.ElementTree(urlset)
     document.write(file, encoding='unicode', xml_declaration=True)
+
+
+def write_sitemap_urlset(file, urls):
+    warnings.warn('write_sitemap_urlset is deprecated', DeprecationWarning)
+    return write_urlset(file, urls)
