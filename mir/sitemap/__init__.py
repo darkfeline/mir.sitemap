@@ -21,7 +21,7 @@ import io
 from typing import NamedTuple
 import xml.etree.ElementTree as ET
 
-__version__ = '0.1.0'
+__version__ = '1.0.0'
 
 
 class URL(NamedTuple):
