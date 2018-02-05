@@ -1,20 +1,20 @@
-mir.protology README
-====================
+mir.sitemap README
+==================
 
-.. image:: https://circleci.com/gh/darkfeline/mir.protology.svg?style=shield
-   :target: https://circleci.com/gh/darkfeline/mir.protology
+.. image:: https://circleci.com/gh/darkfeline/mir.sitemap.svg?style=shield
+   :target: https://circleci.com/gh/darkfeline/mir.sitemap
    :alt: CircleCI
-.. image:: https://codecov.io/gh/darkfeline/mir.protology/branch/master/graph/badge.svg
-   :target: https://codecov.io/gh/darkfeline/mir.protology
+.. image:: https://codecov.io/gh/darkfeline/mir.sitemap/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/darkfeline/mir.sitemap
    :alt: Codecov
-.. image:: https://badge.fury.io/py/mir.protology.svg
-   :target: https://badge.fury.io/py/mir.protology
+.. image:: https://badge.fury.io/py/mir.sitemap.svg
+   :target: https://badge.fury.io/py/mir.sitemap
    :alt: PyPI Release
-.. image:: https://readthedocs.org/projects/mir-protology/badge/?version=latest
-   :target: http://mir-protology.readthedocs.io/en/latest/
+.. image:: https://readthedocs.org/projects/mir-sitemap/badge/?version=latest
+   :target: http://mir-sitemap.readthedocs.io/en/latest/
    :alt: Latest Documentation
 
-Template project for Python projects under the mir namespace.
+Sitemap generator
 
 Before running any other make command, run::
 

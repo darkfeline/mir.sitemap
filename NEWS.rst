@@ -1,5 +1,5 @@
-mir.protology Release Notes
-===========================
+mir.sitemap Release Notes
+=========================
 
 This project uses `semantic versioning <http://semver.org/>`_.
 
